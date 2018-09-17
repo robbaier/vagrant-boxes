@@ -1,0 +1,10 @@
+.idea/
+.bundle/
+iso
+*.box
+packer_cache
+packer.log
+.DS_Store
+/packer-*/
+/builds/
+Gemfile.lock
