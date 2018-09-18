@@ -44,12 +44,6 @@
       {
         "output": "../builds/{{user `box_basename`}}.box",
         "type": "vagrant"
-      },
-      {
-        "type": "vagrant-cloud",
-        "box_tag": "robbaier/centos-7.5",
-        "access_token": "{{user `cloud_token`}}",
-        "version": "{{user `version`}}"
       }
     ]
   ],
