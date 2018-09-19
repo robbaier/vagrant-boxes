@@ -8,7 +8,7 @@ These boxes are intended to provide stable, current development environments wit
 
 ## What's Included
 * Apache 2.2.15
-* MySQL ([MariaDB](https://mariadb.org/) 10.3.9)
+* MySQL ([MariaDB](https://mariadb.org/) 10)
 * PHP 7.2
   * [PHPUnit](https://phpunit.de/index.html)
   * [Phing](https://www.phing.info/)
@@ -62,3 +62,9 @@ Successfully built box files will be in the `builds` directory.
 The build process includes configuration for the Vagrant Cloud post-processor. This uploads each successfully built box to Vagrant Cloud. This functionality requires a valid [authentication token](https://www.vagrantup.com/docs/vagrant-cloud/users/authentication.html#authenticating-tools) set in the `ATLAS_TOKEN` environment variable.
 
 If you only intend to use these boxes locally, remove the vagrant-cloud post-processor section of the JSON file for the box you are building.
+
+### Vagrant Plugins
+When working with the boxes built by this project, there are some Vagrant plugins that can help make your life easier. Installing these plugins is recommended to simplify working with Vagrant boxes.
+* [Vagrant Auto-network](https://github.com/oscar-stack/vagrant-auto_network) - Automatically configure Vagrant private network interfaces
+* [Vagrant Host Manager](https://github.com/devopsgroup-io/vagrant-hostmanager) -  Manages the hosts file on guest machines (and optionally the host)
+* [Vagrant vbguest](https://github.com/dotless-de/vagrant-vbguest) - Automatically installs the host's VirtualBox Guest Additions on the guest system
